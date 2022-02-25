@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .wrapper {
+            background-color: wheat;
+            width: 1000px;
+            height: 700px;
+        }
+        
+        .content {
+            width: 1000px;
+            height: 400px;
+            background-color: cornflowerblue;
+        }
+        
+        .content aside {
+            width: 30%;
+            height: 400px;
+            background-color: red;
+            float: left;
+        }
+        
+        .content section {
+            width: 70%;
+            height: 400px;
+            background-color: brown;
+            float: left;
+        }
+        
+        .content section>#sec1 {
+            width: 50%;
+            height: 100%;
+            background-color: coral;
+            float: left;
+        }
+        
+        .content section>#sec2 {
+            width: 50%;
+            height: 100%;
+            background-color: seagreen;
+            float: left;
+        }
+        
+        header {
+            background-color: blue;
+            width: 100%;
+            height: 80px;
+        }
+        
+        .menu li {
+            width: 180px;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+            text-indent: 15px;
+            background-color: darkkhaki;
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        .menu li:hover {
+            background-color: lightcoral;
+        }
+        
+        li:hover>a {
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: yellow;
+        }
+        
+        .menu li .submenu {
+            display: none;
+        }
+        
+        .menu li:hover>.submenu {
+            display: block;
+            position: sticky;
+        }
+        
+        span {
+            width: 280px;
+            height: 50px;
+            float: left;
+            background-color: wheat;
+            line-height: 50px;
+        }
+        
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: sienna;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                    <ul class="submenu">
+                        <li><a href="">SERVICES</a></li>
+                        <li>
+                            <a href="">CONTACT</a></li>
+                        <li>
+                            <a href="">HELP</a></li>
+                    </ul>
+                </li>
+                <li><a href="">HELP</a></li>
+                <span>
+                    <label for="nhan">Search</label>
+                    <input type="text" name="nhan" id="nhan">
+                    <input type="button" value="go">
+                </span>
+            </ul>
+
+        </nav>
+        <header></header>
+        <div class="content">
+            <aside></aside>
+            <section>
+                <div id="sec1"></div>
+                <div id="sec2"></div>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
